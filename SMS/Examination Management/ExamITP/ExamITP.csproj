@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99801F78-E94F-414F-87BE-348ED26DD346}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamITP</RootNamespace>
+    <AssemblyName>ExamITP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\AIA Insurance\Desktop\sappe\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B83BC4F3CEF12EEC7DD6895970173BCB7B5E1834</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>ExamITP_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.14, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFees.Designer.cs">
+      <DependentUpon>AddFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG1.Designer.cs">
+      <DependentUpon>AddMarksG1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG10.Designer.cs">
+      <DependentUpon>AddMarksG10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG12.Designer.cs">
+      <DependentUpon>AddMarksG12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG3.Designer.cs">
+      <DependentUpon>AddMarksG3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG5.Designer.cs">
+      <DependentUpon>AddMarksG5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG6.Designer.cs">
+      <DependentUpon>AddMarksG6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG7.Designer.cs">
+      <DependentUpon>AddMarksG7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddMarksG8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarksG8.Designer.cs">
+      <DependentUpon>AddMarksG8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cryRep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cryRep.Designer.cs">
+      <DependentUpon>cryRep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="examFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examFees.Designer.cs">
+      <DependentUpon>examFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="examProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="examProcess.Designer.cs">
+      <DependentUpon>examProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mailEF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mailEF.Designer.cs">
+      <DependentUpon>mailEF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="placeExam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="placeExam.Designer.cs">
+      <DependentUpon>placeExam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="placeExamTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="placeExamTable.Designer.cs">
+      <DependentUpon>placeExamTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="topAch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch.Designer.cs">
+      <DependentUpon>topAch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch10.Designer.cs">
+      <DependentUpon>topAch10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch12.Designer.cs">
+      <DependentUpon>topAch12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch3.Designer.cs">
+      <DependentUpon>topAch3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch5.Designer.cs">
+      <DependentUpon>topAch5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch6.Designer.cs">
+      <DependentUpon>topAch6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch7.Designer.cs">
+      <DependentUpon>topAch7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="topAch8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="topAch8.Designer.cs">
+      <DependentUpon>topAch8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValidateExam.cs" />
+    <Compile Include="yearEnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yearEnd.Designer.cs">
+      <DependentUpon>yearEnd.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddFees.resx">
+      <DependentUpon>AddFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG1.resx">
+      <DependentUpon>AddMarksG1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG10.resx">
+      <DependentUpon>AddMarksG10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG12.resx">
+      <DependentUpon>AddMarksG12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG3.resx">
+      <DependentUpon>AddMarksG3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG5.resx">
+      <DependentUpon>AddMarksG5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG6.resx">
+      <DependentUpon>AddMarksG6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG7.resx">
+      <DependentUpon>AddMarksG7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMarksG8.resx">
+      <DependentUpon>AddMarksG8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cryRep.resx">
+      <DependentUpon>cryRep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examFees.resx">
+      <DependentUpon>examFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="examProcess.resx">
+      <DependentUpon>examProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mailEF.resx">
+      <DependentUpon>mailEF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="placeExam.resx">
+      <DependentUpon>placeExam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="placeExamTable.resx">
+      <DependentUpon>placeExamTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="topAch.resx">
+      <DependentUpon>topAch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch10.resx">
+      <DependentUpon>topAch10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch12.resx">
+      <DependentUpon>topAch12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch3.resx">
+      <DependentUpon>topAch3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch5.resx">
+      <DependentUpon>topAch5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch6.resx">
+      <DependentUpon>topAch6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch7.resx">
+      <DependentUpon>topAch7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="topAch8.resx">
+      <DependentUpon>topAch8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yearEnd.resx">
+      <DependentUpon>yearEnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ExamITP_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13578697_1227186090625926_1272328988_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wisdom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wisdom School\WindowsFormsApplication4\WindowsFormsApplication4.csproj">
+      <Project>{65f4cfe7-c24e-4174-9a10-4dc60c2327a2}</Project>
+      <Name>WindowsFormsApplication4</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

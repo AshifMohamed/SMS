@@ -1,0 +1,39 @@
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.exe
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.pdb
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.csprojResolveAssemblyReference.cache
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Properties.Resources.resources
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.csproj.GenerateResource.Cache
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.exe
+c:\users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.pdb
+C:\Users\agmoh\OneDrive\Documents\Visual Studio 2013\Projects\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.Design.dll
+C:\Users\agmoh\OneDrive\Documents\Visual Studio 2013\Projects\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.dll
+C:\Users\agmoh\OneDrive\Documents\Visual Studio 2013\Projects\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\agmoh\OneDrive\Documents\Visual Studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Home.resources
+C:\Users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Supplier.resources
+C:\Users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Inventory.resources
+C:\Users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.SalesOrder.resources
+C:\Users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.PurchaseOrder.resources
+C:\Users\agmoh\onedrive\documents\visual studio 2013\Projects\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Return.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.exe.config
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.exe.manifest
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.application
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.exe
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\Bookshop Management.pdb
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.Design.dll
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.dll
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\MetroFramework.Fonts.dll
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\WindowsFormsApplication4.exe
+D:\ITP Presentation\Bookshop Management\Bookshop Management\bin\Debug\WindowsFormsApplication4.pdb
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.csprojResolveAssemblyReference.cache
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Inventory.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Supplier.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.SalesOrder.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.PurchaseOrder.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Return.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Home.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop_Management.Properties.Resources.resources
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.csproj.GenerateResource.Cache
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.exe.manifest
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.application
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.exe
+D:\ITP Presentation\Bookshop Management\Bookshop Management\obj\Debug\Bookshop Management.pdb

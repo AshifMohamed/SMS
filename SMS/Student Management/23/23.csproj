@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B84DCC4-5815-4E43-A4F5-377685CA46FF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_23</RootNamespace>
+    <AssemblyName>23</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EAD2D931C6CCD16240AAFFC06BB2C6B7621A4351</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>23_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="achievements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="achievements.Designer.cs">
+      <DependentUpon>achievements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allDonationPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allDonationPayments.Designer.cs">
+      <DependentUpon>allDonationPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allsemesPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allsemesPayments.Designer.cs">
+      <DependentUpon>allsemesPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="applicantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="applicantForm.Designer.cs">
+      <DependentUpon>applicantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Certificates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificates.Designer.cs">
+      <DependentUpon>Certificates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="commonform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="commonform.Designer.cs">
+      <DependentUpon>commonform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Discipline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Discipline.Designer.cs">
+      <DependentUpon>Discipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverDuePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverDuePayments.Designer.cs">
+      <DependentUpon>OverDuePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefineForm.Designer.cs">
+      <DependentUpon>RefineForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegForm.Designer.cs">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\allDonationPayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\allDonationPayments.Designer.cs">
+      <DependentUpon>allDonationPayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipa.Designer.cs">
+      <DependentUpon>shipa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentDonation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentDonation.Designer.cs">
+      <DependentUpon>studentDonation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentSemesFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="studentSemesFees.Designer.cs">
+      <DependentUpon>studentSemesFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="studentValidate.cs" />
+    <Compile Include="viewallachievements.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="viewallachievements.Designer.cs">
+      <DependentUpon>viewallachievements.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="viewAllApplicants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewAllApplicants.Designer.cs">
+      <DependentUpon>viewAllApplicants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewAllStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewAllStudents.Designer.cs">
+      <DependentUpon>viewAllStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewpayhistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewpayhistory.Designer.cs">
+      <DependentUpon>viewpayhistory.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="achievements.resx">
+      <DependentUpon>achievements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allDonationPayments.resx">
+      <DependentUpon>allDonationPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allsemesPayments.resx">
+      <DependentUpon>allsemesPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="applicantForm.resx">
+      <DependentUpon>applicantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificates.resx">
+      <DependentUpon>Certificates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commonform.resx">
+      <DependentUpon>commonform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Discipline.resx">
+      <DependentUpon>Discipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverDuePayments.resx">
+      <DependentUpon>OverDuePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RefineForm.resx">
+      <DependentUpon>RefineForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegForm.resx">
+      <DependentUpon>RegForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\allDonationPayments.resx">
+      <DependentUpon>allDonationPayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipa.resx">
+      <DependentUpon>shipa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentDonation.resx">
+      <DependentUpon>studentDonation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="studentSemesFees.resx">
+      <DependentUpon>studentSemesFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewallachievements.resx">
+      <DependentUpon>viewallachievements.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewAllApplicants.resx">
+      <DependentUpon>viewAllApplicants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewAllStudents.resx">
+      <DependentUpon>viewAllStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewpayhistory.resx">
+      <DependentUpon>viewpayhistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="23_TemporaryKey.pfx" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\certificate-icon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8219-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yellow-rectangle-button-hi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove-male-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateIcon_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-remove-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updateIcon_small1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_receipt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b-document-invoice-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addedit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle_Bin_Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_edit2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle_Bin_Full1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle_bin_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-remove-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file_edit3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stock-photo-document-icon-114026737.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document-Icon-small_1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification_error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-remove-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_38797837-Golden-cup-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grid-icon-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grid-icon-image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Wisdom School\WindowsFormsApplication4\WindowsFormsApplication4.csproj">
+      <Project>{65f4cfe7-c24e-4174-9a10-4dc60c2327a2}</Project>
+      <Name>WindowsFormsApplication4</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
